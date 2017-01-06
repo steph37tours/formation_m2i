@@ -1,7 +1,3 @@
-# formation_m2i
-formation m2i
-
-
 # Formation m2i
 
 ## PROJET HTML
