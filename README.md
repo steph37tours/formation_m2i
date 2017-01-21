@@ -2,6 +2,9 @@
 
 ## PROJET
 
+Application de gestion permettant de gérer les cours de musique et les élèves.
+(Seule l'IHM est implémentée dans ce dépôt).
+
 Technologies implémentées :
 
 * HTML5
