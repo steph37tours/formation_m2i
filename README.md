@@ -16,4 +16,4 @@ Technologies implémentées :
 
 ### SCREENSHOT
 
-![Screeshot](https://github.com/claudebueno/WordpressThemePointB/blob/master/screenshot.png)
+![Screeshot](https://github.com/steph37tours/formation_m2i/blob/master/gemusic.png)
