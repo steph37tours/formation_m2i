@@ -13,3 +13,7 @@ Technologies implémentées :
 
 * Bootstrap : http://getbootstrap.com/
 * Font Awesome : http://fontawesome.io
+
+### SCREENSHOT
+
+![Screeshot](https://github.com/claudebueno/WordpressThemePointB/blob/master/screenshot.png)
