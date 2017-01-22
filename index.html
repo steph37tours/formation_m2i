@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <title>GE Music</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
 
-    <head>
-        <meta charset="utf-8">
-        <title>GE Music</title>
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/sticky-footer.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>    
 
-    <body>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Accueil<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Liste Elèves</a></li>
+                        <li><a href="#">Nouvelle Saisie</a></li>
+                        <li><a href="#">Inscription</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" id="settings" title="" data-toggle="popover" data-placement="bottom" data-original-title="Settings">
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-off"></i></a></li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- /.Fixed navbar -->
 
         <div class="container">
-
-            <div class="masthead">
-                <h1 class="text-muted"><i class="fa fa-music" aria-hidden="true"></i>
- GE Music</h1>
-            </div>
-
-
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Accueil<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Liste Elèves</a></li>
-                            <li><a href="#">Nouvelle Saisie</a></li>
-                            <li><a href="#">Inscription</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-
             <!-- Jumbotron -->
             <div class="jumbotron">
+                <h1><i class="fa fa-music" aria-hidden="true"></i> GE Music</h1>
                 <p class="lead">Application de gestion permettant de gérer les cours de musique et les élèves</p>
             </div>
+            <!-- /.Jumbotron -->
+        </div>
 
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <section class="widget">
@@ -62,13 +66,14 @@
                             <thead>
                                 <!-- En-tête du tableau -->
                                 <tr>
-                                    <th class="hidden-xs"></th>
+                                    <th class="hidden-xs">#</th>
                                     <th class="hidden-xs">Nom</th>
                                     <th class="hidden-xs">Prenom</th>
                                     <th class="hidden-xs">Adresse</th>
                                     <th class="hidden-xs">CP</th>
                                     <th class="hidden-xs">Ville</th>
                                     <th class="hidden-xs">Téléphone</th>
+                                    <th class="hidden-xs">Action</th>
                                 </tr>
                             </thead>
 
@@ -82,6 +87,7 @@
                                     <td>37100</td>
                                     <td>Tours</td>
                                     <td>02 47 49 46 45</td>
+                                    <td><i class="fa fa-pencil-square-o fa-lg tab-action"></i> <i class="fa fa-trash-o fa-lg tab-action"></i></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fa fa-user-circle-o fa-lg"></i></td>
@@ -91,6 +97,7 @@
                                     <td>75010</td>
                                     <td>Paris</td>
                                     <td>01 75 49 46 45</td>
+                                    <td><i class="fa fa-pencil-square-o fa-lg tab-action"></i> <i class="fa fa-trash-o fa-lg tab-action"></i></td>
                                 </tr>
                                 <tr>
                                   <td><i class="fa fa-user-circle-o fa-lg"></i></td>
@@ -100,32 +107,26 @@
                                     <td>69010</td>
                                     <td>Lyon</td>
                                     <td>04 89 27 40 00</td>
+                                    <td><i class="fa fa-pencil-square-o fa-lg tab-action"></i> <i class="fa fa-trash-o fa-lg tab-action"></i></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p><a class="btn btn-default btn btn-primary" href="#" role="button">Ajouter un Elève</a></p>
+                        <a class="btn btn-default btn btn-primary" href="#" role="button">Ajouter un Elève</a>
+                        <!-- <a class="btn btn-default btn btn-danger" href="#" role="button">Supprimer un Elève</a> -->
                     </section>
                 </div>
             </div>
+        </div>
 
-
+        <div class="container">
             <!-- Site footer -->
             <footer class="footer">
-
                 <div class="container">
-                    <span class="text-muted"><i class="fa fa-music" aria-hidden="true"></i>
- <strong>GE Music</strong> - 2017 - Tous droit réservés</span>
+                <span class="text-muted"><i class="fa fa-music" aria-hidden="true"></i><strong>  GE Music</strong> - 2017 - Tous droit réservés</span>
                 </div>
             </footer>
-
         </div>
-        <!-- /container -->
 
-        <!-- JavaScript à positionner en bas de la page HTML-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Correction bug à partir de Windows 8 pour IE10 viewport -->
-        <script src="js/ie10-viewport-bug-workaround.js"></script>
-    </body>
-
+    </div>
+</body>
 </html>
